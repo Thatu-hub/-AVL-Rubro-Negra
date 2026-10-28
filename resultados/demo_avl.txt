@@ -1,0 +1,254 @@
+==========================================================
+ Amazon Logistics - Black Friday
+ Registro de encomendas com árvores balanceadas
+ EDB II (IMD0039) - Thaliton do Nascimento Silva
+==========================================================
+
+Escolha a estrutura de dados:
+  1 - Árvore AVL
+  2 - Árvore Rubro-Negra (caída para a esquerda - LLRB)
+  0 - Sair
+Opção: 1
+
+===== Árvore AVL =====
+  1 - Inserir encomenda(s)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar em ordem (crescente)
+  5 - Visualizar estrutura da árvore
+  6 - Verificar propriedades de balanceamento
+  7 - Estatísticas (altura, nós, rotações)
+  8 - Carregar exemplo de demonstração
+  9 - Limpar árvore
+ 10 - Trocar de estrutura (mantendo os IDs)
+  0 - Sair
+Opção: 1
+IDs separados por espaço: 10 20 30 25 5 1 2
+  Encomenda 10 registrada.
+  Balanceamento: nenhuma rotação necessária.
+  Encomenda 20 registrada.
+  Balanceamento: nenhuma rotação necessária.
+  Encomenda 30 registrada.
+  Balanceamento: 1 x RR (simples à esquerda)
+  Encomenda 25 registrada.
+  Balanceamento: nenhuma rotação necessária.
+  Encomenda 5 registrada.
+  Balanceamento: nenhuma rotação necessária.
+  Encomenda 1 registrada.
+  Balanceamento: 1 x LL (simples à direita)
+  Encomenda 2 registrada.
+  Balanceamento: nenhuma rotação necessária.
+
+===== Árvore AVL =====
+  1 - Inserir encomenda(s)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar em ordem (crescente)
+  5 - Visualizar estrutura da árvore
+  6 - Verificar propriedades de balanceamento
+  7 - Estatísticas (altura, nós, rotações)
+  8 - Carregar exemplo de demonstração
+  9 - Limpar árvore
+ 10 - Trocar de estrutura (mantendo os IDs)
+  0 - Sair
+Opção: 5
+.-- 30 (h=1, fb=+1)
+|   `-- 25 (h=0, fb=0)
+20 (h=3, fb=+1)
+|   .-- 10 (h=0, fb=0)
+`-- 5 (h=2, fb=+1)
+    |   .-- 2 (h=0, fb=0)
+    `-- 1 (h=1, fb=-1)
+
+===== Árvore AVL =====
+  1 - Inserir encomenda(s)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar em ordem (crescente)
+  5 - Visualizar estrutura da árvore
+  6 - Verificar propriedades de balanceamento
+  7 - Estatísticas (altura, nós, rotações)
+  8 - Carregar exemplo de demonstração
+  9 - Limpar árvore
+ 10 - Trocar de estrutura (mantendo os IDs)
+  0 - Sair
+Opção: 6
+  [VÁLIDA] OK: ordem de ABB, alturas e fb em {-1,0,+1} em todos os nós
+
+===== Árvore AVL =====
+  1 - Inserir encomenda(s)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar em ordem (crescente)
+  5 - Visualizar estrutura da árvore
+  6 - Verificar propriedades de balanceamento
+  7 - Estatísticas (altura, nós, rotações)
+  8 - Carregar exemplo de demonstração
+  9 - Limpar árvore
+ 10 - Trocar de estrutura (mantendo os IDs)
+  0 - Sair
+Opção: 3
+ID a buscar: 25
+  Encomenda 25 ENCONTRADA (3 nó(s) visitado(s)).
+
+===== Árvore AVL =====
+  1 - Inserir encomenda(s)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar em ordem (crescente)
+  5 - Visualizar estrutura da árvore
+  6 - Verificar propriedades de balanceamento
+  7 - Estatísticas (altura, nós, rotações)
+  8 - Carregar exemplo de demonstração
+  9 - Limpar árvore
+ 10 - Trocar de estrutura (mantendo os IDs)
+  0 - Sair
+Opção: 3
+ID a buscar: 99
+  Encomenda 99 NÃO encontrada (2 nó(s) visitado(s)).
+
+===== Árvore AVL =====
+  1 - Inserir encomenda(s)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar em ordem (crescente)
+  5 - Visualizar estrutura da árvore
+  6 - Verificar propriedades de balanceamento
+  7 - Estatísticas (altura, nós, rotações)
+  8 - Carregar exemplo de demonstração
+  9 - Limpar árvore
+ 10 - Trocar de estrutura (mantendo os IDs)
+  0 - Sair
+Opção: 1
+IDs separados por espaço: 20
+  Encomenda 20 JÁ EXISTE: inserção ignorada (IDs são únicos).
+
+===== Árvore AVL =====
+  1 - Inserir encomenda(s)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar em ordem (crescente)
+  5 - Visualizar estrutura da árvore
+  6 - Verificar propriedades de balanceamento
+  7 - Estatísticas (altura, nós, rotações)
+  8 - Carregar exemplo de demonstração
+  9 - Limpar árvore
+ 10 - Trocar de estrutura (mantendo os IDs)
+  0 - Sair
+Opção: 2
+ID a remover: 20
+  Encomenda 20 removida.
+  Balanceamento: 1 x LL (simples à direita)
+
+===== Árvore AVL =====
+  1 - Inserir encomenda(s)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar em ordem (crescente)
+  5 - Visualizar estrutura da árvore
+  6 - Verificar propriedades de balanceamento
+  7 - Estatísticas (altura, nós, rotações)
+  8 - Carregar exemplo de demonstração
+  9 - Limpar árvore
+ 10 - Trocar de estrutura (mantendo os IDs)
+  0 - Sair
+Opção: 2
+ID a remover: 1
+  Encomenda 1 removida.
+  Balanceamento: nenhuma rotação necessária.
+
+===== Árvore AVL =====
+  1 - Inserir encomenda(s)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar em ordem (crescente)
+  5 - Visualizar estrutura da árvore
+  6 - Verificar propriedades de balanceamento
+  7 - Estatísticas (altura, nós, rotações)
+  8 - Carregar exemplo de demonstração
+  9 - Limpar árvore
+ 10 - Trocar de estrutura (mantendo os IDs)
+  0 - Sair
+Opção: 2
+ID a remover: 99
+  Encomenda 99 NÃO ENCONTRADA: árvore não foi alterada.
+
+===== Árvore AVL =====
+  1 - Inserir encomenda(s)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar em ordem (crescente)
+  5 - Visualizar estrutura da árvore
+  6 - Verificar propriedades de balanceamento
+  7 - Estatísticas (altura, nós, rotações)
+  8 - Carregar exemplo de demonstração
+  9 - Limpar árvore
+ 10 - Trocar de estrutura (mantendo os IDs)
+  0 - Sair
+Opção: 5
+    .-- 30 (h=0, fb=0)
+.-- 25 (h=1, fb=0)
+|   `-- 10 (h=0, fb=0)
+5 (h=2, fb=-1)
+`-- 2 (h=0, fb=0)
+
+===== Árvore AVL =====
+  1 - Inserir encomenda(s)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar em ordem (crescente)
+  5 - Visualizar estrutura da árvore
+  6 - Verificar propriedades de balanceamento
+  7 - Estatísticas (altura, nós, rotações)
+  8 - Carregar exemplo de demonstração
+  9 - Limpar árvore
+ 10 - Trocar de estrutura (mantendo os IDs)
+  0 - Sair
+Opção: 6
+  [VÁLIDA] OK: ordem de ABB, alturas e fb em {-1,0,+1} em todos os nós
+
+===== Árvore AVL =====
+  1 - Inserir encomenda(s)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar em ordem (crescente)
+  5 - Visualizar estrutura da árvore
+  6 - Verificar propriedades de balanceamento
+  7 - Estatísticas (altura, nós, rotações)
+  8 - Carregar exemplo de demonstração
+  9 - Limpar árvore
+ 10 - Trocar de estrutura (mantendo os IDs)
+  0 - Sair
+Opção: 4
+  2 5 10 25 30
+
+===== Árvore AVL =====
+  1 - Inserir encomenda(s)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar em ordem (crescente)
+  5 - Visualizar estrutura da árvore
+  6 - Verificar propriedades de balanceamento
+  7 - Estatísticas (altura, nós, rotações)
+  8 - Carregar exemplo de demonstração
+  9 - Limpar árvore
+ 10 - Trocar de estrutura (mantendo os IDs)
+  0 - Sair
+Opção: 7
+  Nós: 5 | Altura: 2
+  Rotações acumuladas: LL=2 RR=1 LR=0 RL=0 (total em rotações simples: 3)
+
+===== Árvore AVL =====
+  1 - Inserir encomenda(s)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar em ordem (crescente)
+  5 - Visualizar estrutura da árvore
+  6 - Verificar propriedades de balanceamento
+  7 - Estatísticas (altura, nós, rotações)
+  8 - Carregar exemplo de demonstração
+  9 - Limpar árvore
+ 10 - Trocar de estrutura (mantendo os IDs)
+  0 - Sair
+Opção: 0
+Encerrando.

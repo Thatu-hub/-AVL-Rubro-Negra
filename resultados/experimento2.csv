@@ -1,0 +1,5 @@
+perfil,arvore,ms_total,altura_final,rotacoes,trocas_cor,comparacoes_media_busca
+"pico de pedidos (50% ins, 30% busca, 20% rem)",AVL,243.41,19,528305,,17.00
+"pico de pedidos (50% ins, 30% busca, 20% rem)",LLRB,337.79,26,4411991,3885940,17.49
+"rastreamento   (10% ins, 85% busca,  5% rem)",AVL,117.70,17,104512,,16.05
+"rastreamento   (10% ins, 85% busca,  5% rem)",LLRB,132.34,23,1008142,885355,16.53

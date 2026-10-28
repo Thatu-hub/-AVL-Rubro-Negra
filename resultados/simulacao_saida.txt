@@ -1,0 +1,28 @@
+Simulação Black Friday: 10000000 pedidos em 11 dias (22/11 a 02/12)
+Carga gerada em 0.5 s: 10000000 inserções, 30600000 buscas (600000 de IDs inexistentes), 6573227 remoções
+Pedidos por dia: 22/11=543478 23/11=597826 24/11=543479 25/11=543478 26/11=597826 27/11=706522 28/11=869565 29/11 BF=1902174 30/11=1195652 01/12=978261 02/12 CM=1521739
+Hora de pico: 29/11 BF às 20h, 149964 pedidos novos e 337960 operações no total
+
+--- AVL ---
+Tempo total: 22.92 s  (inserção 1.97 s | busca 11.89 s | remoção 9.05 s)
+Vazão: 2.06 milhões de operações/s (1 núcleo)
+Rotações: inserção 9999973 (1.00/pedido) | remoção 1584366 (0.24/entrega)
+Trocas de cor: inserção 0 | remoção 0
+Nós visitados por busca: 20.58 | buscas encontradas 30000000, não encontradas 600000
+Pico de pedidos ativos: 3475960 | altura máxima: 22
+Fim de cada dia (ativos / altura): 22/11=543478/19 23/11=1071065/20 24/11=1358775/20 25/11=1456163/21 26/11=1492906/21 27/11=1636289/21 28/11=1924644/21 29/11 BF=3169611/22 30/11=3472655/22 01/12=3235911/22 02/12 CM=3426773/22
+
+--- LLRB ---
+Tempo total: 32.56 s  (inserção 2.92 s | busca 16.55 s | remoção 13.09 s)
+Vazão: 1.45 milhões de operações/s (1 núcleo)
+Rotações: inserção 9999973 (1.00/pedido) | remoção 161636983 (24.59/entrega)
+Trocas de cor: inserção 9999937 | remoção 138771409
+Nós visitados por busca: 21.18 | buscas encontradas 30000000, não encontradas 600000
+Pico de pedidos ativos: 3475960 | altura máxima: 33
+Fim de cada dia (ativos / altura): 22/11=543478/19 23/11=1071065/30 24/11=1358775/30 25/11=1456163/30 26/11=1492906/30 27/11=1636289/30 28/11=1924644/32 29/11 BF=3169611/33 30/11=3472655/33 01/12=3235911/31 02/12 CM=3426773/33
+
+--- ABB sem balanceamento (IDs sequenciais) ---
+   10000 IDs: 0.764 s, altura 9999
+   20000 IDs: 0.947 s, altura 19999
+   40000 IDs: 3.545 s, altura 39999
+  Projeção para 10000000 IDs (custo cresce com n²): 221588 s = 61.6 horas só de inserção

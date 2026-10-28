@@ -1,0 +1,3 @@
+arvore,seg_total,seg_insercao,seg_busca,seg_remocao,milhoes_ops_por_s,rotacoes_insercao,rotacoes_remocao,trocas_cor_insercao,trocas_cor_remocao,visitas_por_busca,pico_ativos,altura_maxima
+AVL,22.915,1.974,11.886,9.055,2.059,9999973,1584366,0,0,20.576,3475960,22
+LLRB,32.556,2.919,16.548,13.088,1.449,9999973,161636983,9999937,138771409,21.182,3475960,33

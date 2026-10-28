@@ -1,0 +1,42 @@
+Experimento 1 - mesmos dados nas duas árvores (menor tempo de 5 repetições)
+Altura: arestas da raiz à folha mais funda (folha = 0). Rotações da AVL contadas como
+rotações simples (uma dupla = 2). Cmp = nós visitados por busca (média).
+
+n       ordem        árvore |     h  rot.ins    cores    cmp | h.rem  rot.rem  cores.r |   ms.ins   ms.bus   ms.rem
+1000    crescente    AVL    |     9      990        -   9.48 |     9       77        - |     0.05     0.02     0.04
+                     LLRB   |     9      991      985   9.48 |    11     4078     3577 |     0.07     0.02     0.08
+                     ABB    |   999        -        -  500.5 |     -        -        - |     1.73        -        -
+1000    decrescente  AVL    |     9      990        -   9.48 |     9       80        - |     0.05     0.02     0.04
+                     LLRB   |    14      985      985   9.87 |    11     4372     3830 |     0.08     0.03     0.08
+                     ABB    |   999        -        -  501.0 |     -        -        - |     1.79        -        -
+1000    aleatoria    AVL    |    11      667        -   9.70 |    10      215        - |     0.09     0.04     0.05
+                     LLRB   |    13     1150      734   9.87 |    12     4603     3924 |     0.10     0.05     0.09
+                     ABB    |    20        -        -   11.6 |     -        -        - |     0.05        -        -
+
+10000   crescente    AVL    |    13     9986        -  12.86 |    13      887        - |     0.72     0.45     0.79
+                     LLRB   |    13     9987     9982  12.86 |    15    61816    50806 |     0.87     0.34     1.18
+                     ABB    |  9999        -        - 5000.5 |     -        -        - |   167.48        -        -
+10000   decrescente  AVL    |    13     9986        -  12.86 |    13      843        - |     0.50     0.30     0.60
+                     LLRB   |    17     9982     9982  12.97 |    16    64279    54852 |     1.45     0.58     1.91
+                     ABB    |  9999        -        - 5001.0 |     -        -        - |   194.63        -        -
+10000   aleatoria    AVL    |    15     6947        -  13.06 |    14     1918        - |     1.34     0.64     0.76
+                     LLRB   |    18    11709     7518  13.47 |    16    62175    49596 |     1.59     0.82     1.29
+                     ABB    |    29        -        -   17.6 |     -        -        - |     0.94        -        -
+
+100000  crescente    AVL    |    16    99983        -  16.19 |    16     8362        - |     8.20     9.83    16.76
+                     LLRB   |    16    99984    99978  16.19 |    21   880954   759847 |    15.01    10.44    27.50
+100000  decrescente  AVL    |    16    99983        -  16.19 |    16     8226        - |     9.66     9.95    17.86
+                     LLRB   |    21    99978    99978  16.22 |    20   807092   659344 |    16.90    11.18    24.78
+100000  aleatoria    AVL    |    19    69891        -  16.50 |    18    18578        - |    26.73    12.77    15.61
+                     LLRB   |    23   118929    74555  16.71 |    22   867941   717637 |    42.52    21.38    28.00
+
+Experimento 2 - Black Friday: 100000 encomendas pré-cadastradas (IDs sequenciais) + 1000000 operações
+Novos pedidos recebem IDs crescentes; entregas removem IDs aleatórios existentes.
+
+perfil                                           árv. |        ms      h rotações     cores    cmp
+pico de pedidos (50% ins, 30% busca, 20% rem)    AVL   |     243.4     19    528305         -  17.00
+                                                 LLRB  |     337.8     26   4411991   3885940  17.49
+rastreamento   (10% ins, 85% busca,  5% rem)     AVL   |     117.7     17    104512         -  16.05
+                                                 LLRB  |     132.3     23   1008142    885355  16.53
+
+CSV gravados em resultados/ (se a pasta existir).

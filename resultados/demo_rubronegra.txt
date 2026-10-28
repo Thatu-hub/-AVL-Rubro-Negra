@@ -1,0 +1,256 @@
+==========================================================
+ Amazon Logistics - Black Friday
+ Registro de encomendas com árvores balanceadas
+ EDB II (IMD0039) - Thaliton do Nascimento Silva
+==========================================================
+
+Escolha a estrutura de dados:
+  1 - Árvore AVL
+  2 - Árvore Rubro-Negra (caída para a esquerda - LLRB)
+  0 - Sair
+Opção: 2
+
+===== Árvore Rubro-Negra (LLRB) =====
+  1 - Inserir encomenda(s)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar em ordem (crescente)
+  5 - Visualizar estrutura da árvore
+  6 - Verificar propriedades de balanceamento
+  7 - Estatísticas (altura, nós, rotações)
+  8 - Carregar exemplo de demonstração
+  9 - Limpar árvore
+ 10 - Trocar de estrutura (mantendo os IDs)
+  0 - Sair
+Opção: 1
+IDs separados por espaço: 10 20 30 25 5 1 2
+  Encomenda 10 registrada.
+  Balanceamento: nenhum ajuste necessário.
+  Encomenda 20 registrada.
+  Balanceamento: 1 rotação(ões) à esquerda, 0 à direita, 0 troca(s) de cor
+  Encomenda 30 registrada.
+  Balanceamento: 0 rotação(ões) à esquerda, 0 à direita, 1 troca(s) de cor
+  Encomenda 25 registrada.
+  Balanceamento: nenhum ajuste necessário.
+  Encomenda 5 registrada.
+  Balanceamento: nenhum ajuste necessário.
+  Encomenda 1 registrada.
+  Balanceamento: 0 rotação(ões) à esquerda, 1 à direita, 1 troca(s) de cor
+  Encomenda 2 registrada.
+  Balanceamento: 1 rotação(ões) à esquerda, 0 à direita, 0 troca(s) de cor
+
+===== Árvore Rubro-Negra (LLRB) =====
+  1 - Inserir encomenda(s)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar em ordem (crescente)
+  5 - Visualizar estrutura da árvore
+  6 - Verificar propriedades de balanceamento
+  7 - Estatísticas (altura, nós, rotações)
+  8 - Carregar exemplo de demonstração
+  9 - Limpar árvore
+ 10 - Trocar de estrutura (mantendo os IDs)
+  0 - Sair
+Opção: 5
+.-- 30[P]
+|   `-- 25[V]
+20[P]
+|   .-- 10[P]
+`-- 5[V]
+    `-- 2[P]
+        `-- 1[V]
+Legenda: [P] = preto, [V] = vermelho
+
+===== Árvore Rubro-Negra (LLRB) =====
+  1 - Inserir encomenda(s)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar em ordem (crescente)
+  5 - Visualizar estrutura da árvore
+  6 - Verificar propriedades de balanceamento
+  7 - Estatísticas (altura, nós, rotações)
+  8 - Carregar exemplo de demonstração
+  9 - Limpar árvore
+ 10 - Trocar de estrutura (mantendo os IDs)
+  0 - Sair
+Opção: 6
+  [VÁLIDA] OK: raiz preta, sem vermelhos consecutivos, vermelhos só à esquerda e mesma altura negra
+
+===== Árvore Rubro-Negra (LLRB) =====
+  1 - Inserir encomenda(s)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar em ordem (crescente)
+  5 - Visualizar estrutura da árvore
+  6 - Verificar propriedades de balanceamento
+  7 - Estatísticas (altura, nós, rotações)
+  8 - Carregar exemplo de demonstração
+  9 - Limpar árvore
+ 10 - Trocar de estrutura (mantendo os IDs)
+  0 - Sair
+Opção: 3
+ID a buscar: 25
+  Encomenda 25 ENCONTRADA (3 nó(s) visitado(s)).
+
+===== Árvore Rubro-Negra (LLRB) =====
+  1 - Inserir encomenda(s)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar em ordem (crescente)
+  5 - Visualizar estrutura da árvore
+  6 - Verificar propriedades de balanceamento
+  7 - Estatísticas (altura, nós, rotações)
+  8 - Carregar exemplo de demonstração
+  9 - Limpar árvore
+ 10 - Trocar de estrutura (mantendo os IDs)
+  0 - Sair
+Opção: 3
+ID a buscar: 99
+  Encomenda 99 NÃO encontrada (2 nó(s) visitado(s)).
+
+===== Árvore Rubro-Negra (LLRB) =====
+  1 - Inserir encomenda(s)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar em ordem (crescente)
+  5 - Visualizar estrutura da árvore
+  6 - Verificar propriedades de balanceamento
+  7 - Estatísticas (altura, nós, rotações)
+  8 - Carregar exemplo de demonstração
+  9 - Limpar árvore
+ 10 - Trocar de estrutura (mantendo os IDs)
+  0 - Sair
+Opção: 1
+IDs separados por espaço: 20
+  Encomenda 20 JÁ EXISTE: inserção ignorada (IDs são únicos).
+
+===== Árvore Rubro-Negra (LLRB) =====
+  1 - Inserir encomenda(s)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar em ordem (crescente)
+  5 - Visualizar estrutura da árvore
+  6 - Verificar propriedades de balanceamento
+  7 - Estatísticas (altura, nós, rotações)
+  8 - Carregar exemplo de demonstração
+  9 - Limpar árvore
+ 10 - Trocar de estrutura (mantendo os IDs)
+  0 - Sair
+Opção: 2
+ID a remover: 20
+  Encomenda 20 removida.
+  Balanceamento: 1 rotação(ões) à esquerda, 1 à direita, 0 troca(s) de cor
+
+===== Árvore Rubro-Negra (LLRB) =====
+  1 - Inserir encomenda(s)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar em ordem (crescente)
+  5 - Visualizar estrutura da árvore
+  6 - Verificar propriedades de balanceamento
+  7 - Estatísticas (altura, nós, rotações)
+  8 - Carregar exemplo de demonstração
+  9 - Limpar árvore
+ 10 - Trocar de estrutura (mantendo os IDs)
+  0 - Sair
+Opção: 2
+ID a remover: 1
+  Encomenda 1 removida.
+  Balanceamento: nenhum ajuste necessário.
+
+===== Árvore Rubro-Negra (LLRB) =====
+  1 - Inserir encomenda(s)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar em ordem (crescente)
+  5 - Visualizar estrutura da árvore
+  6 - Verificar propriedades de balanceamento
+  7 - Estatísticas (altura, nós, rotações)
+  8 - Carregar exemplo de demonstração
+  9 - Limpar árvore
+ 10 - Trocar de estrutura (mantendo os IDs)
+  0 - Sair
+Opção: 2
+ID a remover: 99
+  Encomenda 99 NÃO ENCONTRADA: árvore não foi alterada.
+
+===== Árvore Rubro-Negra (LLRB) =====
+  1 - Inserir encomenda(s)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar em ordem (crescente)
+  5 - Visualizar estrutura da árvore
+  6 - Verificar propriedades de balanceamento
+  7 - Estatísticas (altura, nós, rotações)
+  8 - Carregar exemplo de demonstração
+  9 - Limpar árvore
+ 10 - Trocar de estrutura (mantendo os IDs)
+  0 - Sair
+Opção: 5
+.-- 30[P]
+25[P]
+|   .-- 10[P]
+`-- 5[V]
+    `-- 2[P]
+Legenda: [P] = preto, [V] = vermelho
+
+===== Árvore Rubro-Negra (LLRB) =====
+  1 - Inserir encomenda(s)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar em ordem (crescente)
+  5 - Visualizar estrutura da árvore
+  6 - Verificar propriedades de balanceamento
+  7 - Estatísticas (altura, nós, rotações)
+  8 - Carregar exemplo de demonstração
+  9 - Limpar árvore
+ 10 - Trocar de estrutura (mantendo os IDs)
+  0 - Sair
+Opção: 6
+  [VÁLIDA] OK: raiz preta, sem vermelhos consecutivos, vermelhos só à esquerda e mesma altura negra
+
+===== Árvore Rubro-Negra (LLRB) =====
+  1 - Inserir encomenda(s)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar em ordem (crescente)
+  5 - Visualizar estrutura da árvore
+  6 - Verificar propriedades de balanceamento
+  7 - Estatísticas (altura, nós, rotações)
+  8 - Carregar exemplo de demonstração
+  9 - Limpar árvore
+ 10 - Trocar de estrutura (mantendo os IDs)
+  0 - Sair
+Opção: 4
+  2 5 10 25 30
+
+===== Árvore Rubro-Negra (LLRB) =====
+  1 - Inserir encomenda(s)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar em ordem (crescente)
+  5 - Visualizar estrutura da árvore
+  6 - Verificar propriedades de balanceamento
+  7 - Estatísticas (altura, nós, rotações)
+  8 - Carregar exemplo de demonstração
+  9 - Limpar árvore
+ 10 - Trocar de estrutura (mantendo os IDs)
+  0 - Sair
+Opção: 7
+  Nós: 5 | Altura: 2 | Altura negra: 2
+  Ajustes acumulados: rot. esquerda=3 rot. direita=2 trocas de cor=2
+
+===== Árvore Rubro-Negra (LLRB) =====
+  1 - Inserir encomenda(s)
+  2 - Remover encomenda
+  3 - Buscar encomenda
+  4 - Listar em ordem (crescente)
+  5 - Visualizar estrutura da árvore
+  6 - Verificar propriedades de balanceamento
+  7 - Estatísticas (altura, nós, rotações)
+  8 - Carregar exemplo de demonstração
+  9 - Limpar árvore
+ 10 - Trocar de estrutura (mantendo os IDs)
+  0 - Sair
+Opção: 0
+Encerrando.

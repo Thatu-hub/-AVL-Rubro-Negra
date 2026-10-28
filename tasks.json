@@ -1,0 +1,217 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "compilar: programa interativo",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "-Wall",
+        "-Wextra",
+        "-O2",
+        "-std=c99",
+        "-o",
+        "bin/amazon_arvores",
+        "src/main.c",
+        "src/avl.c",
+        "src/rubronegra.c"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "presentation": {
+        "reveal": "silent"
+      }
+    },
+    {
+      "label": "compilar: testes",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "-Wall",
+        "-Wextra",
+        "-O2",
+        "-std=c99",
+        "-o",
+        "bin/testes",
+        "src/testes.c",
+        "src/avl.c",
+        "src/rubronegra.c"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "presentation": {
+        "reveal": "silent"
+      }
+    },
+    {
+      "label": "compilar: benchmark",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "-Wall",
+        "-Wextra",
+        "-O2",
+        "-std=c99",
+        "-o",
+        "bin/benchmark",
+        "src/benchmark.c",
+        "src/avl.c",
+        "src/rubronegra.c",
+        "src/abb.c"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "presentation": {
+        "reveal": "silent"
+      }
+    },
+    {
+      "label": "compilar: simulação",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "-Wall",
+        "-Wextra",
+        "-O2",
+        "-std=c99",
+        "-o",
+        "bin/simulacao",
+        "src/simulacao.c",
+        "src/avl.c",
+        "src/rubronegra.c",
+        "src/abb.c",
+        "-lm"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "presentation": {
+        "reveal": "silent"
+      }
+    },
+    {
+      "label": "Compilar tudo",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "compilar: programa interativo",
+        "compilar: testes",
+        "compilar: benchmark",
+        "compilar: simulação"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Rodar: programa interativo (menu)",
+      "type": "shell",
+      "command": "./bin/amazon_arvores",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "dependsOn": [
+        "compilar: programa interativo"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "focus": true,
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Rodar: testes",
+      "type": "shell",
+      "command": "./bin/testes",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "dependsOn": [
+        "compilar: testes"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "focus": true,
+        "panel": "dedicated",
+        "clear": true
+      },
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Rodar: benchmark (grava resultados/)",
+      "type": "shell",
+      "command": "./bin/benchmark 5",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "dependsOn": [
+        "compilar: benchmark"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "focus": true,
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Rodar: simulação Black Friday (série pequena)",
+      "type": "shell",
+      "command": "./bin/simulacao",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "dependsOn": [
+        "compilar: simulação"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "focus": true,
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Rodar: simulação Black Friday (10 milhões, ~1 GB de RAM)",
+      "type": "shell",
+      "command": "./bin/simulacao 10000000",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "dependsOn": [
+        "compilar: simulação"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "focus": true,
+        "panel": "dedicated",
+        "clear": true
+      }
+    }
+  ]
+}

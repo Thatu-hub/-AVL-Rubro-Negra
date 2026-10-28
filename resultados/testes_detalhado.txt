@@ -1,0 +1,103 @@
+
+=== AVL ===
+  [ok] AVL: árvore vazia tem altura -1
+  [ok] AVL: árvore vazia tem 0 nós
+  [ok] AVL: busca em árvore vazia retorna 0
+  [ok] AVL: remoção em árvore vazia retorna 0
+  [ok] AVL: árvore vazia é válida
+  [ok] AVL: insere 42 na árvore vazia
+  [ok] AVL: um elemento -> altura 0, 1 nó
+  [ok] AVL: árvore com 1 elemento é válida
+  [ok] AVL: encontra 42
+  [ok] AVL: não encontra 7
+  [ok] AVL: remover 7 (inexistente) não altera
+  [ok] AVL: remove o único elemento
+  [ok] AVL: árvore volta a ficar vazia
+  [ok] AVL: 3 de 6 aceitos (duplicados recusados)
+  [ok] AVL: válida após tentativas de duplicação
+  [ok] AVL: propriedades mantidas após CADA uma das 1000 inserções (crescente)
+  [ok] AVL: 1000 nós (crescente)
+  [ok] AVL: percurso em ordem crescente (crescente)
+  [ok] AVL: encontra os 1000 existentes (crescente)
+  [ok] AVL: não encontra 1000 inexistentes (crescente)
+     -> altura final 9, rotações 990
+  [ok] AVL: propriedades mantidas após CADA uma das 1000 inserções (decrescente)
+  [ok] AVL: 1000 nós (decrescente)
+  [ok] AVL: percurso em ordem crescente (decrescente)
+  [ok] AVL: encontra os 1000 existentes (decrescente)
+  [ok] AVL: não encontra 1000 inexistentes (decrescente)
+     -> altura final 9, rotações 990
+  [ok] AVL: propriedades mantidas após CADA uma das 1000 inserções (não ordenada)
+  [ok] AVL: 1000 nós (não ordenada)
+  [ok] AVL: percurso em ordem crescente (não ordenada)
+  [ok] AVL: encontra os 1000 existentes (não ordenada)
+  [ok] AVL: não encontra 1000 inexistentes (não ordenada)
+     -> altura final 11, rotações 708
+  [ok] AVL: remoção de folha (10) mantém propriedades
+  [ok] AVL: remoção de nó com 1 filho à esquerda (20) mantém propriedades
+  [ok] AVL: remoção de nó com 1 filho à direita (80) mantém propriedades
+  [ok] AVL: remoção de nó com 2 filhos (30) mantém propriedades
+  [ok] AVL: remoção de raiz com 2 filhos (50) mantém propriedades
+  [ok] AVL: 9 remoções em sequência, válidas a cada passo
+  [ok] AVL: remover 55 (inexistente) não altera a árvore
+  [ok] AVL: 40000 operações aleatórias batem com o gabarito
+  [ok] AVL: propriedades válidas durante o estresse
+  [ok] AVL: contagem final de nós confere (1499)
+  [ok] AVL: remover todos deixa a árvore vazia
+  41/41 verificações OK
+
+=== Rubro-Negra (LLRB) ===
+  [ok] Rubro-Negra (LLRB): árvore vazia tem altura -1
+  [ok] Rubro-Negra (LLRB): árvore vazia tem 0 nós
+  [ok] Rubro-Negra (LLRB): busca em árvore vazia retorna 0
+  [ok] Rubro-Negra (LLRB): remoção em árvore vazia retorna 0
+  [ok] Rubro-Negra (LLRB): árvore vazia é válida
+  [ok] Rubro-Negra (LLRB): insere 42 na árvore vazia
+  [ok] Rubro-Negra (LLRB): um elemento -> altura 0, 1 nó
+  [ok] Rubro-Negra (LLRB): árvore com 1 elemento é válida
+  [ok] Rubro-Negra (LLRB): encontra 42
+  [ok] Rubro-Negra (LLRB): não encontra 7
+  [ok] Rubro-Negra (LLRB): remover 7 (inexistente) não altera
+  [ok] Rubro-Negra (LLRB): remove o único elemento
+  [ok] Rubro-Negra (LLRB): árvore volta a ficar vazia
+  [ok] Rubro-Negra (LLRB): 3 de 6 aceitos (duplicados recusados)
+  [ok] Rubro-Negra (LLRB): válida após tentativas de duplicação
+  [ok] Rubro-Negra (LLRB): propriedades mantidas após CADA uma das 1000 inserções (crescente)
+  [ok] Rubro-Negra (LLRB): 1000 nós (crescente)
+  [ok] Rubro-Negra (LLRB): percurso em ordem crescente (crescente)
+  [ok] Rubro-Negra (LLRB): encontra os 1000 existentes (crescente)
+  [ok] Rubro-Negra (LLRB): não encontra 1000 inexistentes (crescente)
+     -> altura final 9, rotações 991
+  [ok] Rubro-Negra (LLRB): propriedades mantidas após CADA uma das 1000 inserções (decrescente)
+  [ok] Rubro-Negra (LLRB): 1000 nós (decrescente)
+  [ok] Rubro-Negra (LLRB): percurso em ordem crescente (decrescente)
+  [ok] Rubro-Negra (LLRB): encontra os 1000 existentes (decrescente)
+  [ok] Rubro-Negra (LLRB): não encontra 1000 inexistentes (decrescente)
+     -> altura final 14, rotações 985
+  [ok] Rubro-Negra (LLRB): propriedades mantidas após CADA uma das 1000 inserções (não ordenada)
+  [ok] Rubro-Negra (LLRB): 1000 nós (não ordenada)
+  [ok] Rubro-Negra (LLRB): percurso em ordem crescente (não ordenada)
+  [ok] Rubro-Negra (LLRB): encontra os 1000 existentes (não ordenada)
+  [ok] Rubro-Negra (LLRB): não encontra 1000 inexistentes (não ordenada)
+     -> altura final 12, rotações 1136
+  [ok] Rubro-Negra (LLRB): remoção de folha (10) mantém propriedades
+  [ok] Rubro-Negra (LLRB): remoção de nó com 1 filho à esquerda (20) mantém propriedades
+  [ok] Rubro-Negra (LLRB): remoção de nó com 1 filho à direita (80) mantém propriedades
+  [ok] Rubro-Negra (LLRB): remoção de nó com 2 filhos (30) mantém propriedades
+  [ok] Rubro-Negra (LLRB): remoção de raiz com 2 filhos (50) mantém propriedades
+  [ok] Rubro-Negra (LLRB): 9 remoções em sequência, válidas a cada passo
+  [ok] Rubro-Negra (LLRB): remover 55 (inexistente) não altera a árvore
+  [ok] Rubro-Negra (LLRB): 40000 operações aleatórias batem com o gabarito
+  [ok] Rubro-Negra (LLRB): propriedades válidas durante o estresse
+  [ok] Rubro-Negra (LLRB): contagem final de nós confere (1499)
+  [ok] Rubro-Negra (LLRB): remover todos deixa a árvore vazia
+  41/41 verificações OK
+
+=== Exemplos resolvidos dos slides ===
+  [ok] AVL: {1,2,3,10,4,5,9,7,8,6} gera a árvore do slide 22 da Aula 17
+  [ok] AVL: caso LR do slide (dupla à direita = esq. em B + dir. em A)
+  [ok] LLRB: 10,20,30,25,5,1,2 gera a árvore (e as cores) do slide 77 da Aula 18
+  [ok] LLRB: Exercício 5 (30,20,10) = 1 rotação à direita + 1 troca de cor
+  4/4 verificações OK
+
+RESULTADO: 86/86 verificações passaram

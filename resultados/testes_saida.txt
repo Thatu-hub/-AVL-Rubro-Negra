@@ -1,0 +1,11 @@
+
+=== AVL ===
+  41/41 verificações OK
+
+=== Rubro-Negra (LLRB) ===
+  41/41 verificações OK
+
+=== Exemplos resolvidos dos slides ===
+  4/4 verificações OK
+
+RESULTADO: 86/86 verificações passaram
